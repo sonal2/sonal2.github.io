@@ -20,5 +20,10 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  //adding the gridrotator library which was installed using bower
+  app.import('bower_components/gridrotator/js/modernizr.custom.26633.js');
+  app.import('bower_components/jquery/jquery.min.js')
+  app.import('bower_components/gridrotator/js/jquery.gridrotator.js');
+
   return app.toTree();
 };

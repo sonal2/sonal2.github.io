@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<div class="container-fluid">
+	<section class="main">
+		{{jquery-gridrotator}}
+	</section>
+ </div>
+ <div id="overlay">
+ 	{{#link-to 'test' class='getStarted btn' id='btnCook' tagName='button'}}Get your Recipe-X{{/link-to}}
+ </div>
 {{outlet}}
