@@ -16,23 +16,24 @@ body {
 	font-family: 'Lato', 'Myriad Pro','Trebuchet MS', sans-serif;
 	font-weight: 300;
 	font-size: 14px;
-	height: 100vh;
-	padding-top: 40px;
+	/*height: 100vh;*/
+	padding-top: 20px;
 }
 
 .container-fluid {
 	position: relative;
 	padding: 0;
-	height: 100vh;
+	/*height: 100vh;*/
 	overflow-y:auto;
 }
 
 .ri-grid{
 	margin: 30px auto 30px;
 	position: relative;
-	/*height: auto;*/
+	/*height: auto;
+	height: 100vh;*/
 	margin-bottom: 0;
-	height: 100vh;
+	
 	overflow-y:auto;
 }
 
@@ -190,7 +191,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    background-color: rgba(0,0,0,0.1); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     display: block;
 }
@@ -201,11 +202,15 @@ body {
     vertical-align: middle;
     padding: 12px 24px;
     border: 0px solid #cc5200;
-    border-radius: 30px;
+    border-radius: 20px;
     background: #ffa84c;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffa84c), to(#ff6905));
     background: -moz-linear-gradient(top, #ffa84c, #ff6905);
     background: linear-gradient(to bottom, #ffa84c, #ff6905);
+    /*background: #f4cc70;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f4cc70), to(#f4cc70));
+    background: -moz-linear-gradient(top, #f4cc70, #f4cc70);
+    background: linear-gradient(to bottom, #f4cc70, #f4cc70);*/
     -webkit-box-shadow: #ff7a00 0px 0px 0px 0px;
     -moz-box-shadow: #ff7a00 0px 0px 0px 0px;
     box-shadow: #ff7a00 0px 0px 0px 0px;
@@ -220,6 +225,10 @@ body {
     background: -webkit-gradient(linear, left top, left bottom, from(#ffca5b), to(#ff7e06));
     background: -moz-linear-gradient(top, #ffca5b, #ff7e06);
     background: linear-gradient(to bottom, #ffca5b, #ff7e06);
+    /*background: #de7a22;
+    background: -webkit-gradient(linear, left top, left bottom, from(#de7a22), to(#de7a22));
+    background: -moz-linear-gradient(top, #de7a22, #de7a22);
+    background: linear-gradient(to bottom, #de7a22, #de7a22);*/
     color: #ffffff;
     text-decoration: none;
 }

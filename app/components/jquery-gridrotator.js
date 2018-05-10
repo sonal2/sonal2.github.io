@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { scheduleOnce } from '@ember/runloop';
+//import { scheduleOnce } from '@ember/runloop';
 
 export default Component.extend({
 	didRender: function () {
