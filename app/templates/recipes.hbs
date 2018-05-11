@@ -1,0 +1,47 @@
+{{navbar-home}}
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Ingredient</th>
+      <th>Food Group</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model.meats as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+    {{#each model.fruit as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+    {{#each model.grain as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+    {{#each model.veggies as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+    {{#each model.dairy as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

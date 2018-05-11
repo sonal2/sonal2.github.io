@@ -16,6 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyBeHg2rK7EdpVdV-gkX3EQoNJJR40Blmjo",
+      authDomain: "recipes-132cc.firebaseapp.com",
+      databaseURL: "https://recipes-132cc.firebaseio.com",
+      projectId: "recipes-132cc",
+      storageBucket: "recipes-132cc.appspot.com",
+      messagingSenderId: "317431192382", 
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
