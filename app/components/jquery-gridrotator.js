@@ -6,8 +6,8 @@ export default Component.extend({
 		window.$.fn.gridrotator.call(
 			this.$("#ri-grid"),
 			{
-				rows : 3,
-				columns : 5,
+				rows : 5,
+				columns : 7,
 				maxStep : 2,
 				interval : 2000,
 				w1024 : {

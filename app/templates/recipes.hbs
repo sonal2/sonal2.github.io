@@ -1,47 +1,107 @@
 {{navbar-home}}
-<table class="table table-bordered table-striped">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Ingredient</th>
-      <th>Food Group</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model.meats as |food|}}
-      <tr>
-        <th>{{food.id}}</th>
-        <td>{{food.ingredient}}</td>
-        <td>{{food.foodGroup}}</td>
-      </tr>
-    {{/each}}
-    {{#each model.fruit as |food|}}
-      <tr>
-        <th>{{food.id}}</th>
-        <td>{{food.ingredient}}</td>
-        <td>{{food.foodGroup}}</td>
-      </tr>
-    {{/each}}
-    {{#each model.grain as |food|}}
-      <tr>
-        <th>{{food.id}}</th>
-        <td>{{food.ingredient}}</td>
-        <td>{{food.foodGroup}}</td>
-      </tr>
-    {{/each}}
-    {{#each model.veggies as |food|}}
-      <tr>
-        <th>{{food.id}}</th>
-        <td>{{food.ingredient}}</td>
-        <td>{{food.foodGroup}}</td>
-      </tr>
-    {{/each}}
-    {{#each model.dairy as |food|}}
-      <tr>
-        <th>{{food.id}}</th>
-        <td>{{food.ingredient}}</td>
-        <td>{{food.foodGroup}}</td>
-      </tr>
-    {{/each}}
-  </tbody>
-</table>
+<div class="container-fluid">
+  <div class="row">
+
+    <section class="left col-xs-1">
+      <!--"left">-->
+      <p>test</p>
+
+    </section>
+
+    <main class="content col-xs-10">
+      <!--"center">-->
+
+      <form>
+        <!--Buttons for the selection of vegetables-->
+        <div class="Ingredients">
+          <div class="test">
+            <h1 class="Choose">Step 1: Choose your veggies</h1>
+            {{#each model.veggies as |food|}}
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="I2">
+                    <button class="not-selected buttons" {{action 'toggleBody'}} type="button"> {{food.ingredient}} </button>
+                  </div>
+                </div>
+                <!--col-4-->
+              </div>
+              <!--row-->
+            {{/each}}
+
+            <h1 class="Choose">Step 2: Choose your fruit</h1>
+            {{#each model.fruit as |food|}}
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="I2">
+                    <button class="not-selected buttons" {{action 'toggleBody'}} type="button">  {{food.ingredient}}</button>
+                  </div>
+                </div>
+                <!--col-4-->
+              </div>
+              <!--row-->
+            {{/each}}
+
+            <h1 class="Choose">Step 3: Choose your grains</h1>
+            {{#each model.grain as |food|}}
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="I2">
+                    <button class="not-selected buttons" {{action 'toggleBody'}} type="button">  {{food.ingredient}}</button>
+                  </div>
+                </div>
+                <!--col-4-->
+              </div>
+              <!--row-->
+            {{/each}}
+
+            <h1 class="Choose">Step 4: Choose your meats</h1>
+            {{#each model.meats as |food|}}
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="I2">
+                    <button class="not-selected buttons" {{action 'toggleBody'}} type="button">  {{food.ingredient}}</button>
+                  </div>
+                </div>
+                <!--col-4-->
+              </div>
+              <!--row-->
+            {{/each}}
+
+            <h1 class="Choose">Step 5: Choose your dairy</h1>
+            {{#each model.dairy as |food|}}
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="I2">
+                    <button class="not-selected buttons" {{action 'toggleBody'}} type="button">  {{food.ingredient}}</button>
+                  </div>
+                </div>
+                <!--col-4-->
+              </div>
+              <!--row-->
+            {{/each}}
+          </div>
+
+        </div>
+        <!--Ingredients-->
+
+        <div class="bottomButtons">
+          <!--Button to reset the form-->
+          <button class="resetButton" type="reset">Reset</button>
+
+          <!--Button to submit the form. The form should save all the selected buttons into a list in JavaScript-->
+          <button type="button" class="nextButton">Next</button>
+        </div>
+      </form>
+
+    </main>
+
+    <section class="right col-xs-1">
+      <!--"right">-->
+      <p>test2</p>
+
+    </section>
+  </div>
+  <!--row-->
+
+</div>
+<!--container-fluid-->
