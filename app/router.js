@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('base', function() {
     this.route('ingredients');
   });
+  this.route('results');
 });
 
 export default Router;
