@@ -22,6 +22,79 @@ body {
 	overflow-x: hidden;
 }
 
+h1{
+	color: #553716;
+	// text-shadow: 1.5px 1.5px 5px #000000;
+	font-weight: 500;
+}
+
+h3 {
+
+	text-align: center;
+	font-weight: 300;
+	font-size:50px;
+	color: #553716;
+	text-shadow: 1.5px 1.5px 5px #2f2f2f;
+}
+.transbox {
+position: absolute;
+//background : linear-gradient(-90deg,#95c940, #03b099);
+background : linear-gradient(-90deg, #f4690e, #f9ae31);
+//background : linear-gradient(-45deg,#d4b790, #f8ede2);
+//background : linear-gradient(-45deg, #f7e3cd,#f8ede2);
+//20df20
+z-index:-1;
+opacity : 0.7;
+width : 200px;
+height: 200px;
+margin: 0;
+padding: 0;
+top:20px;
+// bottom:130px;
+box-shadow: 7px 7px 7px #555555;
+}
+
+.transbox2 {
+position: absolute;
+background : linear-gradient(-45deg,#d4b790, #f8ede2);
+//	background : linear-gradient(-90deg, #f4690e, #f9ae31);
+//20df20
+margin-left:21.5%;
+z-index:-1;
+opacity : 0.7;
+width : 60%;
+height: 100%;
+
+padding: 0;
+//top:170px;
+// bottom:130px;
+//box-shadow: 7px 7px 7px #333333;
+box-shadow: 0px 3px 15px 5px #555555;
+}
+.transbox3 {
+position: absolute;
+//background : linear-gradient(-90deg,#95c940, #03b099);
+//background : linear-gradient(-90deg, #f4690e, #f9ae31);
+background : linear-gradient(-45deg,#d4b790, #f8ede2);
+//background : linear-gradient(-45deg, #f7e3cd,#f8ede2);
+//20df20
+z-index:-1;
+opacity : 0.7;
+width : 200px;
+height: 200px;
+margin: 0;
+padding: 0;
+top:20px;
+margin-left: 83%;
+// bottom:130px;
+box-shadow: 7px 7px 7px #555555;
+}
+
+.transboxdiv{
+	width:50%;
+	text-align: center;
+	margin-left: 23%;
+}
 .container-fluid {
 	position: relative;
 	padding: 0;
@@ -289,11 +362,12 @@ body {
 	width: 100%;
 	height: 40px;
 	border-radius: 20px;
+	background-color: white;
+	color:#FF0000;
 	margin-left: 107%;
 	font-size: 17px;
 	font-style: italic;
 	font-family: "Georgia";
-	text-shadow: 0 0 3px #FF0000;
 }
 
 form {
@@ -322,6 +396,8 @@ form {
 	margin-top: 5%;
 	font-style: italic;
 	font-family: "Georgia";
+	margin-left: 22%;
+	margin-bottom:7px;
 }
 
 .resetButton:hover {
@@ -335,7 +411,7 @@ form {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin-top: 5%;
-	margin-right: 1%;
+	margin-right: 22%;
 	font-style: italic;
 	font-family: "Georgia";
 }
@@ -357,9 +433,15 @@ form {
 	width: 70%;
 	margin-left: 15%;
 }
+.panel-heading {
+	background : linear-gradient(-45deg,#d4b790, #f8ede2);
+	opacity:0.5;
+	z-index:-1;
+}
 
 .results .panel-heading {
-	background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+	// background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+
 }
 
 .results h1 {
@@ -369,6 +451,7 @@ form {
 	font-size: 50px;
 	font-style: italic;
 	font-family: "Georgia";
+
 }
 
 .results h2 {
