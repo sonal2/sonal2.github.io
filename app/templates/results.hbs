@@ -1,14 +1,14 @@
 {{navbar-home}}
-<h1>Recipes</h1>
-<ul style="font-weight:bold">
-  {{#each model.recipes as |item|}}
-    <li>{{item.publisher}}</li>
-    <li>{{item.f2f_url}}</li>
-    <li>{{item.title}}</li>
-    <li>{{item.source_url}}</li>
-    <li>{{item.recipe_id}}</li>
-    <li><img src="{{item.image_url}}" />"</li>
-    <li>{{item.social_rank}}</li>
-    <li>{{item.publisher_url}}</li>
+<h1>Recipes</h1> 
+<ul style="font-weight:bold;color:black;padding-left:50px">
+  {{#each model.hits as |item|}}
+    <li><h1>Title: {{item.recipe.label}}</h1></li>
+    <li>Source: {{item.recipe.url}}</li>
+    <li><img src="{{item.recipe.image}}" />"</li>
+    <li>
+        {{#each item.recipe.ingredientLines as |test|}}
+           <li>{{test}}</li>
+        {{/each}}
+    </li>
   {{/each}}
 </ul>
