@@ -490,6 +490,7 @@ export default Route.extend({
     };
 
     let ingredients = localStorage.getItem("myIngredients");
+    console.log(ingredients);
     if(ingredients != null) {
         return new Promise((resolve, reject) => {
           $.ajax({

@@ -2,8 +2,6 @@ import Controller from '@ember/controller';
 
 export default Controller.extend({
 
-
-
   actions: {
     toggleBody() {
       if (event.target.classList.contains('not-selected')) {
@@ -28,6 +26,7 @@ export default Controller.extend({
           }
         }
 
+        localStorage.setItem('myIngredients', '');
     },
 
 
@@ -54,6 +53,13 @@ export default Controller.extend({
         ingredients += custom.value;
       }
       console.log(ingredients);
+
+      //save to local storage!
+      localStorage.setItem('myIngredients', ingredients);
+      this.transitionToRoute('results');
+
+      // let idd = localStorage.getItem("myIngredients");
+      // console.log(idd);
     }
 }
 
