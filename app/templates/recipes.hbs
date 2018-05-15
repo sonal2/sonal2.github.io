@@ -4,17 +4,22 @@
 
     <section class="left col-xs-1">
       <!--"left">-->
-      <p>test</p>
+
 
     </section>
 
     <main class="content col-xs-10">
       <!--"center">-->
+      <p>To begin your quest in finding your recipe-X, in steps 1-5, select the ingredients
+        that are present in your refrigerator. </p>
 
       <form>
         <!--Buttons for the selection of vegetables-->
+
         <div class="Ingredients">
           <div class="test">
+
+            <h1> Common Ingredients </h1>
             <h1 class="Choose">Step 1: Choose your veggies</h1>
             {{#each model.veggies as |food|}}
               <div class="row">
@@ -81,15 +86,38 @@
             {{/each}}
           </div>
 
+          <h1>Custom Ingredients</h1>
+          <p> No two refrigerators hold the same content. That is why, steps 1-5 asked you
+            to select from a list of common ingredients found in refrigerators. In order for
+            you to get your best match from the ingredients in your refrigerator, in step 6, please enter
+            any ingredients you wish to be included in your search for your recipe-X. </p>
+
+          <h1 class="Choose">Step 6: Custom Ingredients</h1>
+
+          <textarea class="customIngredients" placeholder="Please enter any custom ingredients. Separate multiple ingredients with a common (Example: corn, cilantro)" style="height: 300px; width: 500px; padding: 0;" > </textarea>
+
+
+
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="I2">
+                  <!--textbox form-->
+                </div>
+              </div>
+              <!--col-4-->
+            </div>
+            <!--row-->
+
+
         </div>
         <!--Ingredients-->
 
         <div class="bottomButtons">
           <!--Button to reset the form-->
-          <button class="resetButton" type="reset">Reset</button>
+          <button class="resetButton" {{action 'resetButtons'}} type="reset">Reset</button>
 
           <!--Button to submit the form. The form should save all the selected buttons into a list in JavaScript-->
-          <button type="button" class="nextButton">Next</button>
+          <button type="button" {{action 'submit'}} class="nextButton">Next</button>
         </div>
       </form>
 
@@ -97,7 +125,7 @@
 
     <section class="right col-xs-1">
       <!--"right">-->
-      <p>test2</p>
+    
 
     </section>
   </div>
