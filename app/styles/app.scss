@@ -1,7 +1,6 @@
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-
 *,
 *:after,
 *:before {
@@ -11,8 +10,8 @@
 	padding: 0;
 	margin: 0;
 }
-
 /* General Demo Style */
+
 body {
 	font-family: 'Lato', 'Myriad Pro','Trebuchet MS', sans-serif;
 	font-weight: 300;
@@ -21,24 +20,22 @@ body {
 	// padding-top: 20px;
 	overflow: scroll;
 	overflow-x: hidden;
-
 }
 
 .container-fluid {
 	position: relative;
 	padding: 0;
 	/*height: 100vh;*/
-	overflow-y:auto;
+	overflow-y: auto;
 }
 
-.ri-grid{
-	margin: 30px auto 30px;
+.ri-grid {
+	margin: 30px auto;
 	position: relative;
 	/*height: auto;
 	height: 100vh;*/
 	margin-bottom: 0;
-
-	overflow-y:auto;
+	overflow-y: auto;
 }
 
 .ri-grid ul {
@@ -48,21 +45,20 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 /* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-
-.ri-grid ul:before,
-.ri-grid ul:after{
+.ri-grid ul:after,
+.ri-grid ul:before {
 	content: '';
-    display: table;
+	display: table;
 }
 
 .ri-grid ul:after {
-    clear: both;
+	clear: both;
 }
 
 .ri-grid ul {
-    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	zoom: 1;
+	/* For IE 6/7 (trigger hasLayout) */
 }
 
 .ri-grid ul li {
@@ -80,7 +76,7 @@ body {
 	background: #000;
 }
 
-.ri-grid ul li a{
+.ri-grid ul li a {
 	display: block;
 	outline: none;
 	position: absolute;
@@ -108,22 +104,24 @@ body {
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
-
 /* Grid wrapper sizes */
-.ri-grid-size-1{
+
+.ri-grid-size-1 {
 	width: 55%;
 }
-.ri-grid-size-2{
+
+.ri-grid-size-2 {
 	width: 100%;
-}
-.ri-grid-size-3{
-	width: 100%;
-	margin-top: 0px;
 }
 
+.ri-grid-size-3 {
+	width: 100%;
+	margin-top: 0;
+}
 /* Shadow style */
+
 .ri-shadow:after,
-.ri-shadow:before{
+.ri-shadow:before {
 	content: "";
 	position: absolute;
 	z-index: -2;
@@ -140,7 +138,8 @@ body {
 	-o-transform: rotate(-3deg);
 	transform: rotate(-3deg);
 }
-.ri-shadow:after{
+
+.ri-shadow:after {
 	right: 10px;
 	left: auto;
 	-webkit-transform: rotate(3deg);
@@ -151,15 +150,15 @@ body {
 }
 
 .ri-grid-loading:after,
-.ri-grid-loading:before{
+.ri-grid-loading:before {
 	display: none;
 }
 
-.ri-loading-image{
+.ri-loading-image {
 	display: none;
 }
 
-.ri-grid-loading .ri-loading-image{
+.ri-grid-loading .ri-loading-image {
 	position: relative;
 	width: 30px;
 	height: 30px;
@@ -167,15 +166,15 @@ body {
 	margin: 100px 0 0 -15px;
 	display: block;
 }
-
 /* *************************   */
-.getStarted{
+
+.getStarted {
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    /*display: block;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	/*display: block;
     height: 100px;
     background: #606060;
     color: #ffffff;
@@ -187,138 +186,163 @@ body {
 }
 
 #overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.1); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    display: block;
+	position: fixed;
+	/* Sit on top of the page content */
+	display: none;
+	/* Hidden by default */
+	width: 100%;
+	/* Full width (cover the whole page) */
+	height: 100%;
+	/* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.1);
+	/* Black background with opacity */
+	z-index: 2;
+	/* Specify a stack order in case you're using a different order for other elements */
+	display: block;
 }
 
-#btnCook{
+#btnCook {
 	display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 12px 24px;
-    border: 0px solid #cc5200;
-    border-radius: 20px;
-    background: #ffa84c;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffa84c), to(#ff6905));
-    background: -moz-linear-gradient(top, #ffa84c, #ff6905);
-    background: linear-gradient(to bottom, #ffa84c, #ff6905);
-    /*background: #f4cc70;
+	text-align: center;
+	vertical-align: middle;
+	padding: 12px 24px;
+	border: 0 solid #cc5200;
+	border-radius: 20px;
+	background: #ffa84c;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffa84c), to(#ff6905));
+	background: -moz-linear-gradient(top, #ffa84c, #ff6905);
+	background: linear-gradient(to bottom, #ffa84c, #ff6905);
+	/*background: #f4cc70;
     background: -webkit-gradient(linear, left top, left bottom, from(#f4cc70), to(#f4cc70));
     background: -moz-linear-gradient(top, #f4cc70, #f4cc70);
     background: linear-gradient(to bottom, #f4cc70, #f4cc70);*/
-    -webkit-box-shadow: #ff7a00 0px 0px 0px 0px;
-    -moz-box-shadow: #ff7a00 0px 0px 0px 0px;
-    box-shadow: #ff7a00 0px 0px 0px 0px;
-    font: normal normal bold 40px courier new;
-    color: #ffffff;
+	-webkit-box-shadow: #ff7a00 0 0 0 0;
+	-moz-box-shadow: #ff7a00 0 0 0 0;
+	box-shadow: #ff7a00 0 0 0 0;
+	font: normal normal bold 40px courier new;
+	color: #ffffff;
 }
 
-#btnCook:hover,
-#btnCook:focus {
-    border: 0px solid #ff6600;
-    background: #ffca5b;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffca5b), to(#ff7e06));
-    background: -moz-linear-gradient(top, #ffca5b, #ff7e06);
-    background: linear-gradient(to bottom, #ffca5b, #ff7e06);
-    /*background: #de7a22;
+#btnCook:focus,
+#btnCook:hover {
+	border: 0 solid #ff6600;
+	background: #ffca5b;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffca5b), to(#ff7e06));
+	background: -moz-linear-gradient(top, #ffca5b, #ff7e06);
+	background: linear-gradient(to bottom, #ffca5b, #ff7e06);
+	/*background: #de7a22;
     background: -webkit-gradient(linear, left top, left bottom, from(#de7a22), to(#de7a22));
     background: -moz-linear-gradient(top, #de7a22, #de7a22);
     background: linear-gradient(to bottom, #de7a22, #de7a22);*/
-    color: #ffffff;
-    text-decoration: none;
+	color: #ffffff;
+	text-decoration: none;
 }
+
 #btnCook:active {
-    background: #99652e;
-    background: -webkit-gradient(linear, left top, left bottom, from(#99652e), to(#ff6905));
-    background: -moz-linear-gradient(top, #99652e, #ff6905);
-    background: linear-gradient(to bottom, #99652e, #ff6905);
+	background: #99652e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#99652e), to(#ff6905));
+	background: -moz-linear-gradient(top, #99652e, #ff6905);
+	background: linear-gradient(to bottom, #99652e, #ff6905);
 }
-
-
-
-
-
-
-
 //STYLING FOR RECIPES.HBS
 
-
-
-
-.Ingredients{
-
-    display: block;
-    text-align: center;
-
-
-
+.container-fluid {
+	overflow-x: hidden;
+}
+.content p {
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	font-style: italic;
+	font-family: "Georgia";
 }
 
-.Choose {
+.Ingredients {
+	display: block;
+	text-align: center;
+}
 
-    text-align: center;
+.Ingredients h1{
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	font-size: 50px;
+	font-style: italic;
+	font-family: "Georgia";
+}
+
+.test h1{
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	font-size: 30px;
+	font-style: italic;
+	font-family: "Georgia";
 }
 
 .buttons {
-
-    width: 100%;
-    border-radius: 8px;
-		margin-left: 100%;
-		margin-right: auto;
+	width: 100%;
+	height: 40px;
+	border-radius: 20px;
+	margin-left: 107%;
+	font-size: 17px;
+	font-style: italic;
+	font-family: "Georgia";
+	text-shadow: 0 0 3px #FF0000;
 }
 
 form {
-    display: block;
-    text-align: center;
+	display: block;
+	text-align: center;
 }
 
 .not-selected {
-    background-color: white;
+	background-color: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
 }
 
 .selected {
-    background-color: lightpink;
+	background-color: lightpink;
 }
 
 .buttons:hover {
-    background-color: lightblue;
+	background-color: lightblue;
 }
 
-.resetButton{
-    background-color: white;
-    float: left;
-    width: 20%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 100%;
+.resetButton {
+	background-color: white;
+	float: left;
+	width: 20%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5%;
+	font-style: italic;
+	font-family: "Georgia";
 }
 
-.resetButton:hover{
-    background-color: cadetblue;
+.resetButton:hover {
+	background-color: cadetblue;
 }
 
-.nextButton{
-    background-color: white;
-    float: right;
-    width: 20%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 100%;
+.nextButton {
+	background-color: white;
+	float: right;
+	width: 20%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5%;
+	margin-right: 1%;
+	font-style: italic;
+	font-family: "Georgia";
 }
 
-.submitButton:hover{
-    background-color: indianred;
+.nextButton:hover {
+	background-color: indianred;
 }
-
 /*.left, .right{
     border: 1px;
     border-style: solid;
@@ -328,11 +352,50 @@ form {
 
 
 }*/
+//STYLING FOR RESULTS.HBS
+.results {
+	width: 70%;
+	margin-left: 15%;
+}
 
+.results .panel-heading {
+	background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+}
 
+.results h1 {
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	font-size: 50px;
+	font-style: italic;
+	font-family: "Georgia";
+}
 
-.content{
-    margin-left: 10px;
-    margin-right: -10px;
+.results h2 {
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+	font-size: 25px;
+	font-style: italic;
+	font-family: "Georgia";
+	text-shadow: 0 0 3px #FF0000;
+}
+
+.results a {
+	text-decoration: none;
+}
+
+.results ul {
+	list-style-type: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+}
+
+.content {
+	margin-left: 10px;
+	margin-right: -10px;
 }
 @import "mystyle.scss";
