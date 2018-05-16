@@ -492,6 +492,7 @@ export default Route.extend({
     let ingredients = localStorage.getItem("myIngredients");
     console.log(ingredients);
     if(ingredients != null) {
+
         return new Promise((resolve, reject) => {
           $.ajax({
             url: 'https://api.edamam.com/search?q='+ ingredients +'&app_id=eca07f54&app_key=8edb19e3b69b1aecf7ef86a881bc6e7b&from=0&to=10',

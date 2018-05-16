@@ -47,7 +47,7 @@ export default Controller.extend({
         }
       }
 
-      if(custom.value != null)
+      if($.trim($(".customIngredients").val()))
       {
         ingredients += ",";
         ingredients += custom.value;
