@@ -517,5 +517,11 @@ export default Route.extend({
         alert('Ingredients NULL. Showing example.');
         return example;
     }
+  },
+  setupController(controller, model) {
+   // Call _super for default behavior
+   this._super(controller, model);
+   // Implement your custom setup after
+   this.controllerFor('results').set('ingred', localStorage.getItem("myIngredients"));
   }
 });
