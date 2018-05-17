@@ -326,6 +326,9 @@ form {
 	font-family: "Georgia";
 	margin-left: 22%;
 	margin-bottom:7px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	height: 80px;
 
 }
 
@@ -340,9 +343,12 @@ form {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin-top: 5%;
-	margin-right: 22%;
+	margin-right: 23.5%;
 	font-style: italic;
 	font-family: "Georgia";
+	margin-bottom: 10px;
+	font-size: 30px;
+	height: 80px;
 
 }
 
@@ -350,9 +356,10 @@ form {
     background-color: indianred;
 }
 .panel-heading {
-	background : linear-gradient(-45deg,#d4b790, #f8ede2);
-	opacity:0.5;
+	background : linear-gradient(-45deg,rgba(212,183,144, 0.9), rgba(248,237,226, 0.8));
+	opacity:1;
 	z-index:-1;
+	box-shadow: 1.5px 1.5px 4px #333333;
 }
 
 
